@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @friendlist.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @friendlist.last_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @friendlist.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @friendlist.phone %>
+</p>
+
+<p>
+  <strong>Twitter:</strong>
+  <%= @friendlist.twitter %>
+</p>
+
+<%= link_to 'Edit', edit_friendlist_path(@friendlist) ,class:"btn btn-secondary"%> | |
+<%= link_to 'Back', friendlists_path, class:"btn btn-dark" %>
